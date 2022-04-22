@@ -1,68 +1,89 @@
-import { storage, Context } from "near-sdk-core"
+
+// assembly/model.ts
+import {
+  PersistentUnorderedMap,
+  math,
+  Context,
+  PersistentVector,
+} from "near-sdk-as";
+
+
+
+//Users generating their confessions on blockchain
+export const confessions = new PersistentUnorderedMap<u32, Confession>("confessions");
+
+//stores each book with its owners
+export const confessors = new PersistentUnorderedMap<u32, Array<AccountId>>("access");
+
+export const comments = new PersistentVector<CommentsPosted>("m");
+
+type AccountId = string;
+
 
 @nearBindgen
-export class Contract {
-  private message: string = 'hello world'
-
-  // return the string 'hello world'
-  helloWorld(): string {
-    return this.message
-  }
-
-  // read the given key from account (contract) storage
-  read(key: string): string {
-    if (isKeyInStorage(key)) {
-      return `✅ Key [ ${key} ] has value [ ${storage.getString(key)!} ] and "this.message" is [ ${this.message} ]`
-    } else {
-      return `🚫 Key [ ${key} ] not found in storage. ( ${this.storageReport()} )`
-    }
-  }
-
-  /**
-  write the given value at the given key to account (contract) storage
-  ---
-  note: this is what account storage will look like AFTER the write() method is called the first time
-  ╔════════════════════════════════╤══════════════════════════════════════════════════════════════════════════════════╗
-  ║                            key │ value                                                                            ║
-  ╟────────────────────────────────┼──────────────────────────────────────────────────────────────────────────────────╢
-  ║                          STATE │ {                                                                                ║
-  ║                                │   "message": "data was saved"                                                    ║
-  ║                                │ }                                                                                ║
-  ╟────────────────────────────────┼──────────────────────────────────────────────────────────────────────────────────╢
-  ║                       some-key │ some value                                                                       ║
-  ╚════════════════════════════════╧══════════════════════════════════════════════════════════════════════════════════╝
-   */
-  @mutateState()
-  write(key: string, value: string): string {
-    storage.set(key, value)
-    this.message = 'data was saved' // this is why we need the deorator @mutateState() above the method name
-    return `✅ Data saved. ( ${this.storageReport()} )`
-  }
-
-
-  // private helper method used by read() and write() above
-  private storageReport(): string {
-    return `storage [ ${Context.storageUsage} bytes ]`
+export class CommentsPosted {
+  confessionId: u32;
+  sender: string;
+  constructor(public text: string, confessionId: u32) {
+    this.sender = Context.sender;
+    this.confessionId = confessionId;
+    this.text = text;
   }
 }
 
-/**
- * This function exists only to avoid a compiler error
- *
+@nearBindgen
+export class TypeOfConfession {
+  subject: string;
+  details: string;
+  nickname: string;
+}
 
-ERROR TS2339: Property 'contains' does not exist on type 'src/singleton/assembly/index/Contract'.
 
-     return this.contains(key);
-                 ~~~~~~~~
- in ~lib/near-sdk-core/storage.ts(119,17)
+@nearBindgen
+export class Confession {
+  id: u32;
+  user: AccountId = Context.sender;
+  nickname: string;
+  category: string;
+  details: string;
 
-/Users/sherif/Documents/code/near/_projects/edu.t3/starter--near-sdk-as/node_modules/asbuild/dist/main.js:6
-        throw err;
-        ^
 
- * @param key string key in account storage
- * @returns boolean indicating whether key exists
- */
-function isKeyInStorage(key: string): bool {
-  return storage.hasKey(key)
+
+  constructor(nickname: string, category: string, subject: string, details: string) {
+    this.id = math.hash32<string>(nickname);
+    this.nickname = nickname;
+    this.category = category;
+    this.details = details;
+  }
+
+  static addConfession(nickname: string, subject: string, category: string, details: string): Confession {
+    const confession = new Confession(nickname, category, subject, details);
+    confessions.set(confession.id, confession);
+
+    return confession;
+  }
+
+  static findConfessionById(id: u32): Confession {
+    return confessions.getSome(id);
+  }
+
+  static findConfessions(offset: u32, limit: u32): Confession[] {
+    return confessions.values(offset, offset + limit);
+  }
+
+  static getConfessionsByIdAndUpdate(id: u32, type: TypeOfConfession): Confession {
+    const confession = this.findConfessionById(id);
+
+    confession.nickname = type.nickname;
+    confession.details = type.details;
+
+    confessions.set(id, confession);
+
+    return confession;
+
+  }
+
+  static findConfessionById_Terminate(id: u32): void {
+    confessions.delete(id);
+  }
 }
