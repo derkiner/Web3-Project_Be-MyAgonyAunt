@@ -1,4 +1,4 @@
-import { Confession, TypeOfConfession, comments, CommentsPosted } from './model'
+import { Confession, TypeOfConfession, comments, CommentsPosted } from './singleton/assembly/index'
 
 export function addNewConfession(
   nickname: string,
