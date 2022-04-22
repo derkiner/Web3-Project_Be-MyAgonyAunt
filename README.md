@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/90147636/164792827-870a80fe-8de2-4b27-b019-93b1d25ad497.png)
+![image](https://user-images.githubusercontent.com/90147636/164792960-e3a42cfd-b2d7-42b1-8a3f-c6d73e27e1e0.png)
 
 # `near-sdk-as` Starter Kit
 
