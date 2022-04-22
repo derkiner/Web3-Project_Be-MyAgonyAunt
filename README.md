@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/90147636/164792827-870a80fe-8de2-4b27-b019-93b1d25ad497.png)
+
 # `near-sdk-as` Starter Kit
 
 This is a good project to use as a starting point for your AssemblyScript project.
