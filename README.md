@@ -70,7 +70,7 @@ near view $CONTRACT getConfessionById '{"id":ConfessionId}' --accountId YOUR-ACC
 near view $CONTRACT getConfessions '{"offset":<Starting Point>,"limit":<TotalLimit>}' --accountId YOUR-ACCOUNT.testnet
    
   - Changing General Details of a Confession:
-near call $CONTRACT updateConfession '{"id":CONFESSION ID,"updates":{"type":"<TypeOfConfession>","type":"<WHAT TYPE OF MOVIE>","description":"<DESCRIPTION ABOUT MOVIE>"}}' --accountId YOUR-ACCOUNT.testnet
+near call $CONTRACT updateConfession '{"id":CONFESSION ID,"updates":{"type":"<TypeOfConfession>","type":"<WHAT TYPE OF MOVIE>","description":"<DESCRIPTION ABOUT MOVIE>"}' --accountId YOUR-ACCOUNT.testnet
    
    - Terminating a Confession:
 near call $CONTRACT deleteConfession '{"id":Confession Id}' --accountId YOUR-ACCOUNT.testnet
