@@ -1,4 +1,4 @@
-//importing values from model (Simpleton=> assembly=>index.tx)
+//importing values from model (Singleton=> assembly=>index.tx)
 
 import { Confession, TypeOfConfession, comments, CommentsPosted } from './singleton/assembly/index'
 
