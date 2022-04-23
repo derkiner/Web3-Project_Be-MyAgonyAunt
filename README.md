@@ -46,15 +46,15 @@ In this case, all methods on the class become public contract methods unless mar
 
 4. Log in your Near Account via the terminal
 
-5. (login near)
+(login near)
 
-6. Build the contract
+5. Build the contract
 (yarn build:release)
 
-7. Deploy the contract
+6. Deploy the contract
 (yarn deploy)
 
-8. Set up the development account $CONTRACT
+7. Set up the development account $CONTRACT
 export CONTRACT=<YOUR_DEV_ACCOUNT_HERE>
 
 
