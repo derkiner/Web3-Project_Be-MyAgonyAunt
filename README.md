@@ -66,6 +66,7 @@ export class Contract {
 }
 ```
 
+![image](https://user-images.githubusercontent.com/90147636/164884014-514c61ed-1557-46b3-a8dd-cf61a21f390b.png)
 
 ## Usage
 
