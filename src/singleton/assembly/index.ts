@@ -1,9 +1,9 @@
 // Methods to be taken from near database
 import {
   PersistentUnorderedMap, // Creating unordered map with a prefix
-  math, // Math-oriendted utility
+  math, // Math-oriented utility
   Context, // contract & blockchain-based details
-  PersistentVector, // Implements an array
+  PersistentVector, // Implementing an array
 } from 'near-sdk-as'
 
 
@@ -12,7 +12,7 @@ export const confessions = new PersistentUnorderedMap<u32, Confession>(
   'confessions',
 )
 
-//
+
 export const confessors = new PersistentUnorderedMap<u32, Array<AccountId>>(
   'access',
 )
