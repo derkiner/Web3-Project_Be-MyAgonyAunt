@@ -3,16 +3,17 @@
    ![image](https://user-images.githubusercontent.com/90147636/164793601-a2c15108-d187-426a-9036-62a5e2a199ca.png)
          
 
-## Sample Near Protocole Project => BE MY AGONY AUNT
+## Sample Near Protocole Project => BE MY AGONY AUNT!
 
-To be able to understand the gist of this project, it is fundamental to know what an agony aunt does in general. Prior to the cutting-edge technological tools, people who experienced various problems in their day-to-day lives used to write their secrets to agony aunts who were columnists in newspapers and the main responsibility of those ladies was to give a piece of advice to those confessors. This way, those who shared their secrets and confessed the intimate parts of their lives used to feel a sense of relief at least to some extent. It is in fact still the case. Namely, the concept of 'agony aunts' still exists despite their decreasing number in today's world. Although it may seem a bit obsolete at first glance, it is not the case. Human beings are regarded as social creatures, but they may not prefer to share everything else with their beloved ones at times and in severe mental issues, it may sometimes be a challenge to afford psychiatric help. At this point, the idea of consulting an agony aunt is likely to be a reasonable solution. That being said, the advice that they get is from a human being that can be biased or simply does not care the actual problem and focuses on his/her financial gain.
+To be able to understand the gist of this project, it is fundamental to know what an agony aunt does in general. Prior to the cutting-edge technological tools, people who experienced various problems in their day-to-day lives used to write their secrets to agony aunts who were columnists in newspapers and the main responsibility of those ladies was to give a piece of advice to those confessors. This way, those who shared their secrets and confessed the intimate parts of their lives used to feel a sense of relief at least to some extent. It is in fact still the case. Namely, the concept of 'agony aunts' still exists despite their decreasing number in today's world. Although it may seem a bit obsolete at first glance, it is not the case. Human beings are regarded as social creatures, but they may not prefer to share everything else with their beloved ones at times and in severe mental issues, it may sometimes be a challenge to afford psychiatric help. At this point, the idea of consulting an agony aunt is likely to be a reasonable solution. That being said, the advice that these vulnerable individuals get - in traditional sense - is from a human being at the end of the day and that piece of advice can be biased or simply the agony aunt concerned may not actually care the relevant person's problems and focuses on his/her financial gain.
 
-An agony aunt is a person who writes a column in a newspaper or magazine in which they reply to readers who have written to them for advice on their personal problems.
+Via this project, the objective is to re-create its modernised and reliable version on the blockhain. In the first place, the 'decentralised' nature of the platform will ensure further security for the clients and as such, the identities of those seeking help desperately will not be exposed. Secondly, the agony aunt will not be an individual person in the framework of this project. Instead, people from all walks of life will be able to share their recommendations regarding the related problem. Considering the fact that those who share similar problems tend to visit this platform just out of curiosity or just to find a solution to their own problems, the result will be win-win for both parties. Finally, this project (if it takes place in the long run), 
+
 
 
 (P.S: As advised by the Patika.dev team, `near-sdk-as` Starter Kit has been used as a boilerplate in this project; however, the codes in the folders => Simple & Singleton - Assembly - index.ts files have been created from scratch and as such authentic.)
 
-This is a good project to use as a starting point for your AssemblyScript project.
+
 
 ## Samples
 
