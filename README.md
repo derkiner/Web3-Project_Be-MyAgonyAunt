@@ -60,25 +60,25 @@ export CONTRACT=<YOUR_DEV_ACCOUNT_HERE>
 
 ## How to use it
 
-   - Declaring a New Confession
+   - Declaring a New Confession:
 near call $CONTRACT AddNewConfession '{"nickname":<Client's Preferred Pseudo Name>,"subject":<Confession Title>,"category":<Stating a Specific Confession Category>, "details":<Basic Details of the Confession>}' --accountId YOUR-ACCOUNT.testnet
 
-   - Viewing a Specific Confession
+   - Viewing a Specific Confession:
 near view $CONTRACT getConfessionById '{"id":ConfessionId}' --accountId YOUR-ACCOUNT.testnet
    
-   - Listing Some Confessions
+   - Listing Some Confessions:
 near view $CONTRACT getConfessions '{"offset":<Starting Point>,"limit":<TotalLimit>}' --accountId YOUR-ACCOUNT.testnet
    
-  - Changing General Details of a Confession
+  - Changing General Details of a Confession:
 near call $CONTRACT updateConfession '{"id":CONFESSION ID,"updates":{"type":"<TypeOfConfession>","type":"<WHAT TYPE OF MOVIE>","description":"<DESCRIPTION ABOUT MOVIE>"}}' --accountId YOUR-ACCOUNT.testnet
    
-   - Terminating a Confession
+   - Terminating a Confession:
 near call $CONTRACT deleteConfession '{"id":Confession Id}' --accountId YOUR-ACCOUNT.testnet
    
-  - Writing a Recommendation for a Confessor
+  - Writing a Recommendation for a Confessor:
 near call $CONTRACT newAdvice '{"text":<ADVICE>,"confessionId":CONFESSION ID}' --accountId YOUR-ACCOUNT.testnet
    
-   - Seeing & Listing Recommendations
+   - Seeing & Listing Recommendations:
 near call $CONTRACT obtainAdvice --accountId YOUR-ACCOUNT.testnet
   
 near call $CONTRACT grabAdviceById '{"id":CONFESSION ID,"limit":<TOTAL NUMBER OF RECOMMENDATIONS>}' --accountId YOUR-ACCOUNT.testnet
