@@ -3,7 +3,7 @@
    ![image](https://user-images.githubusercontent.com/90147636/164793601-a2c15108-d187-426a-9036-62a5e2a199ca.png)
          
 
-## Near Protocole Sample Project => BE MY AGONY AUNT!
+## Near Protocol Sample Project => BE MY AGONY AUNT!
 
 To be able to understand the gist of this project, it is fundamental to know what an agony aunt does in general. Prior to the cutting-edge technological tools, people who experienced various problems in their day-to-day lives used to write their secrets to agony aunts who were columnists in newspapers and the main responsibility of those ladies was to give a piece of advice to those confessors. This way, those who shared their secrets and confessed the intimate parts of their lives used to feel a sense of relief at least to some extent. It is in fact still the case. Namely, the concept of 'agony aunts' still exists despite their decreasing number in today's world. Although it may seem a bit obsolete at first glance, it is not the case. Human beings are regarded as social creatures, but they may not prefer to share everything else with their beloved ones at times and in severe mental issues, it may sometimes be a challenge to afford psychiatric help. At this point, the idea of consulting an agony aunt is likely to be a reasonable solution. That being said, the advice that these vulnerable individuals get - in traditional sense - is from a human being at the end of the day and that piece of advice can be biased or simply the agony aunt concerned may not actually care the relevant person's problems and focuses on his/her financial gain.
 
