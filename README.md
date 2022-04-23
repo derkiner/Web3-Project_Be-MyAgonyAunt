@@ -45,7 +45,6 @@ In this case, all methods on the class become public contract methods unless mar
 3. run `yarn` through the terminal
 
 4. Log in your Near Account via the terminal
-
 (login near)
 
 5. Build the contract
