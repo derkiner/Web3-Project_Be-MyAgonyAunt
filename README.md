@@ -1,9 +1,8 @@
-   ![image](https://user-images.githubusercontent.com/90147636/164792960-e3a42cfd-b2d7-42b1-8a3f-c6d73e27e1e0.png) 
+   ![image](https://user-images.githubusercontent.com/90147636/164792960-e3a42cfd-b2d7-42b1-8a3f-c6d73e27e1e0.png)
+           ![image](https://user-images.githubusercontent.com/90147636/164883498-94d2e998-e9fe-48e5-954b-4a158c2e0868.png)
+
        ![image](https://user-images.githubusercontent.com/90147636/164793601-a2c15108-d187-426a-9036-62a5e2a199ca.png)
-         ![image](https://user-images.githubusercontent.com/90147636/164883454-f4e6e68d-7ec2-46f0-adb1-a87fe567763d.png)
-
-
-
+         
 
 # `near-sdk-as` Starter Kit
 
