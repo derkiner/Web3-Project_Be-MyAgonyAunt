@@ -1,5 +1,10 @@
+//importing values from model (Simpleton=> assembly=>index.tx)
+
 import { Confession, TypeOfConfession, comments, CommentsPosted } from './singleton/assembly/index'
 
+// Contract code is down below
+
+// Function returning new confessions through certain parameters
 export function addNewConfession(
   nickname: string,
   subject: string,
@@ -29,11 +34,15 @@ export function deleteConfession(id: u32): void {
 }
 
 export function newAdvice(text: string, confessionId: u32): void {
+  //Generating a new piece of advice, then populating the relevant parts
   const advice = new CommentsPosted(text, confessionId)
+  //Pushing the advice
   comments.push(advice)
 }
 
+//Maximum limit for confessions (To enable reasonable gas prices)
 const totalConfession = 5
+//This function returns an array regarding recommendations given by clients. It is a view method.
 export function obtainAdvice(): CommentsPosted[] {
   const quantityOfAdvice = min(totalConfession, comments.length)
   const startIndex = comments.length - quantityOfAdvice
