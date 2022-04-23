@@ -42,19 +42,21 @@ In this case, all methods on the class become public contract methods unless mar
 
 2. Be in that specific folder (cd Be_MyAgonyAunt)
 
-4. run `yarn` through the terminal
+3. run `yarn` through the terminal
 
-6. Log in your Near Account via the terminal
-(login near)
+4. Log in your Near Account via the terminal
 
-5.Build the contract
+5. (login near)
+
+6. Build the contract
 (yarn build:release)
 
-6- Deploy the contract
+7. Deploy the contract
 (yarn deploy)
 
-7-Set up the development account $CONTRACT
+8. Set up the development account $CONTRACT
 export CONTRACT=<YOUR_DEV_ACCOUNT_HERE>
+
 
 ## How to use it
 
