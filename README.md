@@ -79,9 +79,7 @@ near call $CONTRACT deleteConfession '{"id":Confession Id}' --accountId YOUR-ACC
 near call $CONTRACT newAdvice '{"text":<ADVICE>,"confessionId":CONFESSION ID}' --accountId YOUR-ACCOUNT.testnet
    
    - Seeing & Listing Recommendations:
-near call $CONTRACT obtainAdvice --accountId YOUR-ACCOUNT.testnet
-  
-near call $CONTRACT grabAdviceById '{"id":CONFESSION ID,"limit":<TOTAL NUMBER OF RECOMMENDATIONS>}' --accountId YOUR-ACCOUNT.testnet
+near call $CONTRACT obtainAdvice --accountId YOUR-ACCOUNT.testnet    /   near call $CONTRACT grabAdviceById '{"id":CONFESSION ID,"limit":<TOTAL NUMBER OF RECOMMENDATIONS>}' --accountId YOUR-ACCOUNT.testnet
 
 
 ![image](https://user-images.githubusercontent.com/90147636/164883543-e8e985c4-a66d-4f23-94d6-fd608d8d3b0b.png)
