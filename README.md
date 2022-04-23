@@ -7,6 +7,8 @@
 
 To be able to understand the gist of this project, it is fundamental to know what an agony aunt does in general. Prior to the cutting-edge technological tools, people who experienced various problems in their day-to-day lives used to write their secrets to agony aunts who were columnists in newspapers and the main responsibility of those ladies was to give a piece of advice to those confessors. This way, those who shared their secrets and confessed the intimate parts of their lives used to feel a sense of relief at least to some extent. It is in fact still the case. Namely, the concept of 'agony aunts' still exists despite their decreasing number in today's world. Although it may seem a bit obsolete at first glance, it is not the case. Human beings are regarded as social creatures, but they may not prefer to share everything else with their beloved ones at times and in severe mental issues, it may sometimes be a challenge to afford psychiatric help. At this point, the idea of consulting an agony aunt is likely to be a reasonable solution. That being said, the advice that these vulnerable individuals get - in traditional sense - is from a human being at the end of the day and that piece of advice can be biased or simply the agony aunt concerned may not actually care the relevant person's problems and focuses on his/her financial gain.
 
+   ![image](https://user-images.githubusercontent.com/90147636/164884014-514c61ed-1557-46b3-a8dd-cf61a21f390b.png)
+
 Via this project, the objective is to re-create its modernised and reliable version on the blockhain. In the first place, the 'decentralised' nature of the platform will ensure further security for the clients and as such, the identities of those seeking help desperately will not be exposed. Secondly, the agony aunt will not be an individual person in the framework of this project. Instead, people from all walks of life will be able to share their recommendations regarding the related problem. Considering the fact that those who share similar problems tend to visit this platform just out of curiosity or just to find a solution to their own problems, the result will be win-win for both parties. Finally, this project (if it indeed takes place in the long run) can prevent the intrusive comments of the unwanted bullies thanks to the presence of the DAO (Decentralised Autonomous Organisations) that can construct a legal contract limiting such behavior patterns through certain precautions such as voting for the exclusion of those behaving inappropriately. As it was once flawlessly uttered by the legal scholar, Oliver Wendell Holmes; "“Your Liberty To Swing Your Fist Ends Where My Nose Begins”. This means that 'respect' will be the key word in this application.
 
 
@@ -74,7 +76,7 @@ export class Contract {
 }
 ```
 
-![image](https://user-images.githubusercontent.com/90147636/164884014-514c61ed-1557-46b3-a8dd-cf61a21f390b.png)
+
 
 ## Usage
 
