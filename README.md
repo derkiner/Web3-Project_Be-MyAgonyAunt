@@ -16,7 +16,7 @@ Via this project, the objective is to re-create its modernised and reliable vers
 
 
 
-## Regarding The Specific Folders
+## Regarding Specific Folders (where the actual code live)
 
 Within this repository formed in line with the Near Protocol, two separate AssemblyScript contracts exist in their own folder:
 
@@ -60,6 +60,28 @@ export CONTRACT=<YOUR_DEV_ACCOUNT_HERE>
 
 ## How to use it
 
+   - Declaring a New Confession
+near call $CONTRACT AddNewConfession '{"nickname":<Client's Preferred Pseudo Name>,"subject":<Confession Title>,"category":<Stating a Specific Confession Category>, "details":<Basic Details of the Confession>}' --accountId YOUR-ACCOUNT.testnet
+
+   - Viewing a Specific Confession
+near view $CONTRACT getConfessionById '{"id":ConfessionId}' --accountId YOUR-ACCOUNT.testnet
+   
+   - Listing Some Confessions
+near view $CONTRACT getConfessions '{"offset":<Starting Point>,"limit":<TotalLimit>}' --accountId YOUR-ACCOUNT.testnet
+   
+  - Changing General Details of a Confession
+near call $CONTRACT updateConfession '{"id":CONFESSION ID,"updates":{"type":"<TypeOfConfession>","type":"<WHAT TYPE OF MOVIE>","description":"<DESCRIPTION ABOUT MOVIE>"}}' --accountId YOUR-ACCOUNT.testnet
+   
+   - Terminating a Confession
+near call $CONTRACT deleteConfession '{"id":Confession Id}' --accountId YOUR-ACCOUNT.testnet
+   
+  - Writing a Recommendation for a Confessor
+near call $CONTRACT newAdvice '{"text":<ADVICE>,"confessionId":CONFESSION ID}' --accountId YOUR-ACCOUNT.testnet
+   
+   - Seeing & Listing Recommendations
+near call $CONTRACT obtainAdvice --accountId YOUR-ACCOUNT.testnet
+  
+near call $CONTRACT grabAdviceById '{"id":CONFESSION ID,"limit":<TOTAL NUMBER OF RECOMMENDATIONS>}' --accountId YOUR-ACCOUNT.testnet
 
 
 ![image](https://user-images.githubusercontent.com/90147636/164883543-e8e985c4-a66d-4f23-94d6-fd608d8d3b0b.png)
