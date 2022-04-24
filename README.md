@@ -18,7 +18,7 @@ Via this project, the objective is to re-create its modernised and reliable vers
 
 ## Regarding Specific Folders (where the actual codes live)
 
-Within this repository formed in line with the Near Protocol, two separate AssemblyScript contracts exist in their own folder:
+Within this repository formed in line with the Near Protocol, two separate AssemblyScript contracts exist in their own folders:
 
 - **simple** in the `src/simple` folder
 - **singleton** in the `src/singleton` folder
