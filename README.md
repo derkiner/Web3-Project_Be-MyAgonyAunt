@@ -30,7 +30,7 @@ An AssemblyScript contract is written in the "simple style" when the `index.ts` 
 
 ### Singleton
 
-An AssemblyScript contract is written in the "singleton style" when the `index.ts` file (the contract entry point) has a single exported class (the name of the class doesn't matter) that is decorated with `@nearBindgen`.
+An AssemblyScript contract is written in the "singleton style" when the `index.ts` file (the contract entry point) has a single exported class that is decorated with `@nearBindgen`.
 
 In this case, all methods on the class become public contract methods unless marked `private`.  Also, all instance variables are stored as a serialized instance of the class under a special storage key named `STATE`.  
 
