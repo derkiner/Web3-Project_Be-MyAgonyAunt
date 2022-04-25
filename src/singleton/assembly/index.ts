@@ -4,6 +4,7 @@ import {
   math, // Math-oriented utility
   Context, // contract & blockchain-based details
   PersistentVector, // Implementing an array
+  PersistentDeque, //Implementing queue
 } from 'near-sdk-as'
 
 
