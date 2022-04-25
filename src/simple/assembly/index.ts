@@ -32,7 +32,7 @@ export function deleteConfession(id: u32): void {
   Confession.findConfessionById_Terminate(id)
 }
 
-export function saveMessages(text: string): bool {
+export function Messages(text: string): bool {
   assert(text.length > 0, "This part can't be empty!")
   const texts = new PersistentDeque<string>("texts")
   texts.pushFront(Context.sender + " claims" + texts) 
