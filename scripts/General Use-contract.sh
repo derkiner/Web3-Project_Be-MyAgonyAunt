@@ -13,5 +13,4 @@ near call $CONTRACT deleteConfession '{"id":Confession Id}' --accountId YOUR-ACC
 
 near call $CONTRACT newAdvice '{"text":,"confessionId":Confession Id}' --accountId YOUR-ACCOUNT.testnet
 
-$CONTRACT obtainAdvice --accountId YOUR-ACCOUNT.testnet / near call $CONTRACT grabAdviceById '{"id":Confession Id,"limit":}' --accountId YOUR-ACCOUNT.testnet
 
