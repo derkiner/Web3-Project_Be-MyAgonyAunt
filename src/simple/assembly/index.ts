@@ -10,17 +10,16 @@ export function addNewConfession(
   subject: string,
   category: string,
   details: string,
+  confessionId:u32,
 ): Confession {
-  return Confession.addConfession(nickname, category, details, subject)
+  return Confession.addConfession(nickname, subject, category, details, confessionId)
 }
 
-export function getConfessionById(id: u32): Confession {
-  return Confession.findConfessionById(id)
-}
-
+  
 export function getConfessions(offset: u32, limit: u32 = 5): Confession[] {
   return Confession.findConfessions(offset, limit)
 }
+
 
 export function uptodateConfession(
   id: u32,
@@ -33,6 +32,14 @@ export function deleteConfession(id: u32): void {
   Confession.findConfessionById_Terminate(id)
 }
 
+export function saveMessages(text: string): bool {
+  assert(text.length > 0, "This part can't be empty!")
+  const texts = new PersistentDeque<string>("texts")
+  texts.pushFront(Context.sender + " claims" + texts) 
+  return true
+}
+
+
 export function newAdvice(text: string, confessionId: u32): void {
   //Generating a new piece of advice, then populating the relevant parts
   const advice = new CommentsPosted(text, confessionId)
@@ -40,6 +47,7 @@ export function newAdvice(text: string, confessionId: u32): void {
   comments.push(advice)
 }
 
+  
 //Maximum limit for confessions (To enable reasonable gas prices)
 const totalConfession = 5
 //This function returns an array regarding recommendations given by clients. It is a view method.
