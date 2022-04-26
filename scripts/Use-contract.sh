@@ -33,12 +33,10 @@ echo
 # the following line fails with an error because we can't write to storage without signing the message
 # --> FunctionCallError(HostError(ProhibitedInView { method_name: "storage_write" }))
 # near view $CONTRACT write '{"key": "some-key", "value":"some value"}'
+
 echo near call $CONTRACT AddNewConfession '{"nickname":<Client's Preferred Pseudo Name>,"subject":,"category":, "details":}' --accountId YOUR-ACCOUNT.testnet
-
 echo near call $CONTRACT updateConfession '{"id":Confession Id,"updates":{"type":"","type":"","description":""}' --accountId YOUR-ACCOUNT.testnet
-
 echo near call $CONTRACT deleteConfession '{"id":Confession Id}' --accountId YOUR-ACCOUNT.testnet
-
 echo near call $CONTRACT newAdvice '{"text":,"confessionId":Confession Id}' --accountId YOUR-ACCOUNT.testnet
 
 echo
