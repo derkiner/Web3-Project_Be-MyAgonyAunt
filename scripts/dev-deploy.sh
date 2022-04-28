@@ -13,7 +13,7 @@ echo
 echo ---------------------------------------------------------
 echo "Step 2: Deploy the contract"
 echo
-echo "(edit scripts/1.dev-deploy.sh to deploy other contract)"
+echo "(edit scripts/dev-deploy.sh to deploy other contract)"
 echo ---------------------------------------------------------
 echo
 
