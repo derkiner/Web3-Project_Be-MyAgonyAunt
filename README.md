@@ -86,6 +86,4 @@ near call $CONTRACT obtainAdvice --accountId YOUR-ACCOUNT.testnet    /   near ca
    
    
    
-   ## VIDEO EXPLANATIONS ABOUT THE PROJECT:
-   
-   https://www.loom.com/share/60ef3b3863a7495aaf29c696c23e2565 
+
